@@ -7,12 +7,7 @@ weight: 1
 
 # About Me
 
-<div class="card">
-  <div class="card-body">
-    This website in under construction. Information provided here is not accurate.
-  </div>
-</div>
-<div class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+<div class="card text-white bg-danger mb-3">
   <div class="card-header">IMPORTANT</div>
   <div class="card-body">
     <h5 class="card-title">Under construction</h5>

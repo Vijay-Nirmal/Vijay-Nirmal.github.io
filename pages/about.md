@@ -17,13 +17,23 @@ weight: 1
 
 Hi I am **{{ site.author.name }}** :wave:,<br><br>
 
-I am a 23 year old Computer Science undergrad from Coimbatore, India. It all started when I got my first laptop at the age of nine and made my first website when I was 11 years old. What inspired me the most at the first place is the potential computer science has. To appease my curiosity, I strive to know how things work; I am determined to innovate in this field.
+I am a 23 year Software Engineer in H&R Block. where I mostly work on core/advance part of .Net/Azure to implement robust framework that will be used my multiple teams. As a whole I am a full stack developer using AspNetCore for Backend, UI using Angular, Databse using both SQL and NoSQL, and have strong knowledge in deployment using Containerization/Kubernetes, also have worked on service mesh using Istio.
+
+Contrary to the general reception, I was actually a fan of the Windows phone. It was what inspired me to learn to code as I felt the need to fill the gap of apps on the Windows Phone app store. Later, I started contributing to the Windows Community Toolkit open-source project and became a core member of the team. I have always had an affinity for Microsoft, and working for Microsoft would be a dream come true.
 
 <div class="row">
 {% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}
 {% include about/skills.html title="Other Skills" source=site.data.other-skills %}
 </div>
 
+## Work Experience
+
 <div class="row">
-{% include about/timeline.html %}
+{% include about/workExperience.html %}
+</div>
+
+## Education
+
+<div class="row">
+{% include about/education.html %}
 </div>

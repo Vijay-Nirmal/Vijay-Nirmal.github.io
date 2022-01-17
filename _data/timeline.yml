@@ -1,17 +1,19 @@
-- title: Student, Harvard CS
-  from: 2014
-  to: 2018
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+- title: Software Developer, H&R Block, India
+  from: Jun 2021
+  to: Present
+  description:
+    - .Net Framework development
+    - Monitoring and Telemetry implementation
+    - Microservice performance issue analysis and fixings
+    - Load Testing
 
-- title: Software Engineer, Google, UK
-  from: 2018
-  to: present
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+- title: Associate Software Developer, H&R Block, India
+  from: Jan 2019
+  to: Jun 2021
+  description:
+    - Web API's underlying Framework developer
+    - Microservice developer
+    - Custom version generator
+    - Automation using Powershell scripting
+    - Code generation using T4 Template
+    - Code coverage tool for .Net Core

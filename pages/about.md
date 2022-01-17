@@ -7,14 +7,6 @@ weight: 1
 
 # About Me
 
-<div class="card text-white bg-danger mb-3">
-  <div class="card-header">IMPORTANT</div>
-  <div class="card-body">
-    <h5 class="card-title">Under construction</h5>
-    <p class="card-text">This website in under construction. Information provided here is not accurate. In the meantime please visit my <a href="https://www.linkedin.com/in/vijay-nirmal/">linkedin profile</a> for details</p>
-  </div>
-</div>
-
 Hi I am **{{ site.author.name }}** :wave:,<br><br>
 
 I am a 23 year Software Engineer in H&R Block. where I mostly work on core/advance part of .Net/Azure to implement robust framework that will be used my multiple teams. As a whole I am a full stack developer using AspNetCore for Backend, UI using Angular, Databse using both SQL and NoSQL, and have strong knowledge in deployment using Containerization/Kubernetes, also have worked on service mesh using Istio.

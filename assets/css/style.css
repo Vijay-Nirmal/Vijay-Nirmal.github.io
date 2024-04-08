@@ -1311,7 +1311,12 @@ textarea.form-input::-webkit-resizer { display: none; }
     font-size: 18px;
   }
 
-
+  .radial-text-gradient {
+    background: radial-gradient(circle, #FFD700, #FFA500);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
 
   /**
    * #MAIN

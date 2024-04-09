@@ -165,6 +165,19 @@ body { background: var(--smoky-black); }
   #REUSED STYLE
 \*-----------------------------------*/
 
+a.external:after {
+  background-color: white;
+  content: "";
+  display: inline-flex;
+  height: 10px;
+  margin-left: 4px;
+  -webkit-mask-image: url(/assets/images/icon-link.svg);
+  mask-image: url(/assets/images/icon-link.svg);
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  width: 10px;
+}
+
 .sidebar,
 article {
   background: var(--eerie-black-2);
@@ -1402,6 +1415,12 @@ textarea.form-input::-webkit-resizer { display: none; }
     align-items: flex-start;
     gap: 18px;
     padding: 30px;
+  }
+
+  .vertical-center {
+    display: flex !important;
+    align-items: center !important;
+    padding: 10px !important;
   }
 
   .service-icon-box {

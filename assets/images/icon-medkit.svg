@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+    <defs>
+        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#FFDB6E" />
+        <stop offset="100%" stop-color="#FFBC5E" />
+        </linearGradient>
+    </defs>
+    <rect x="32" y="112" width="448" height="352" rx="48" ry="48" fill="none" stroke="url(#grad1)"
+        stroke-linejoin="round" stroke-width="32" />
+    <path d="M144 112V80a32 32 0 0132-32h160a32 32 0 0132 32v32M256 208v160M336 288H176" fill="none"
+        stroke="url(#grad1)" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+</svg>

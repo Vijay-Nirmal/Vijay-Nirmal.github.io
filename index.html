@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vijay Nirmal</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/profile-pic.jpeg" alt="Vijay Nirmal" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Vijay Nirmal">Vijay Nirmal</h1>
+
+          <p class="title">Senior Web Developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:pon.vijaynirmal@outlook.com" class="contact-link">pon.vijaynirmal<br>@outlook.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+12133522795" class="contact-link">+91 77083 65034</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Linkedin</p>
+
+              <a href="https://www.linkedin.com/in/vijay-nirmal/" class="contact-link external">@vijay-nirmal</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Youtube</p>
+
+              <a href="https://www.youtube.com/channel/UC_tk_aCdD8C_6BZPknE9cMQ" class="contact-link external">@BehindDotNet</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Tamil Nadu, India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            Full stack developer and technical lead extensively worked with .Net, Angular, Azure,
+            and Kubernetes. Expertise in developing frameworks, doing Proof-of-Concept, and designing solutions.
+          </p>
+
+          <p>
+            Passionated in software development even before joining any company, I was building applications using .Net and contributed to to open-source projects.
+            Notabally I have contributed to Windows Community Toolkit project which is an open-source project maintained by Microsoft for 3 years and became an official core team member with internal team meetings like standup.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-construct.svg" alt="construct icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Frameworks design and development</h4>
+
+                <p class="service-item-text">
+                  Design and develop high quality frameworks using .Net, NodeJs and Angular.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality web development using AspNetCore Web API, Anuglar and SQL Server/MongoDB.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg" alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Software Design and Proof-of-Concept</h4>
+
+                <p class="service-item-text">
+                  Come up with a software design and develop a Proof-of-Concept for the same.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-rocket.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">DevOps Activity</h4>
+
+                <p class="service-item-text">
+                  Experience in deploying applications in Azure and Kubernetes using technologies like Azure Pipeline, Docker, Isto and Helm.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+        <!--
+          - Certifications
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Certifications</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item vertical-center">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-Azure-Developer-Associate.svg" alt="construct icon" width="120">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Microsoft Certified:<br>Azure Developer Associate</h4>
+              </div>
+
+            </li>
+
+            <li class="service-item vertical-center">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-Azure-Fundamentals.svg" alt="Web development icon" width="120">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Microsoft Certified:<br>Azure Fundamentals</h4>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - personal projects
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">Personal Projects</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-trophy.svg" alt="construct icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">2 Time Hackathon Winner</h4>
+
+                <p class="service-item-text">
+                  1. Proposed a broader idea to use generative AI (OpenAI) in educational and showcased a prototype.<br>- Neudesic, IBM
+                  <br><br>2. Proposed an idea to convert existing application to be adapted for covid lockdown situation.<br>- HRBlock
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-bar-chart.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Critic Review Analyser (WIP)</h4>
+
+                <p class="service-item-text">
+                  Developing a tool that scrapes Metacritic for all video game data like ratings, reviews, etc and created a custom dynamic UI to analyze and visualize the data.
+                  <br><br>Plan to use data science to identify patterns, biases and trends in video game critics.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-server.svg" alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Personal Home Server</h4>
+
+                <p class="service-item-text">
+                  1. Self Hosting multiple website using personal home server.
+                  <br><br>2. NAS server to save and share files with
+                  family using NextCloud
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-medkit.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">EMR Application for Hospital</h4>
+
+                <p class="service-item-text">
+                  EMR application is a health records and medical practice management application that is built on top of an open-source implementation and deployed in Self-Hosted server.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+        <!--
+          - clients
+        -->
+
+        <!-- <section class="clients">
+
+          <h3 class="h3 clients-title">Clients</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-1-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-2-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-3-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-4-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-5-color.png" alt="client logo">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="./assets/images/logo-6-color.png" alt="client logo">
+              </a>
+            </li>
+
+          </ul>
+
+        </section> -->
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Framework/Library Development</h5>
+                <data value="80">95%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 95%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">System Design and POC</h5>
+                <data value="70">85%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">.Net Web API / Microservices</h5>
+                <data value="90">100%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 100%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Angular</h5>
+                <data value="50">90%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 90%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">SQL Server and NoSQL Database (MongoDB, ConsmosDB)</h5>
+                <data value="50">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Devops / CICD / Kubernetes</h5>
+                <data value="50">75%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Azure technology stack</h5>
+                <data value="50">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">OpenAI</h5>
+                <data value="50">55%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 55%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Technical Lead (Client Side), Neudesic</h4>
+
+              <span>May 2022 — Present</span>
+
+              <p class="timeline-text">
+                One of 4 Tech Lead the client-side project which as 8 developement teams. My responsiblity is to design and develop the architecture for the company's internal application. Also, working on POC works for new technologies and concepts.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Software Engineer, H&R Block</h4>
+
+              <span>Jan 2019 — May 2022</span>
+
+              <p class="timeline-text">
+                Part of the framework team, desiging, developed and maintained the framework for the company's internal applications along with POC works for new technologies and concepts. Also, setting standards and guidelines for the team to develop Web Applications and APIs.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title"><a class="external" href="https://github.com/orgs/CommunityToolkit/teams/hall-of-fame" target="_blank">Open-source Contributer, Windows Community Toolkit (Microsoft)</a></h4>
+
+              <span>Jun 2016 — Mar 2019</span>
+
+              <p class="timeline-text">
+                Core team member of Microsoft's open-source project Windows Community Toolkit. Helped implement new features, maintenance, PR review and documentation
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Amrita Vishwa Vidyapeetham</h4>
+
+              <span>Jun 2015 - Apr 2019</span>
+
+              <p class="timeline-text">
+                B. Tech. Computer Science
+                <br>Graduated with distinction
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+            <li class="blog-post-item">
+              <a href="https://www.youtube.com/watch?v=FhHpNMIAGCI">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/YouTube-Thumbnail-part-1.png" alt="Basic Understanding of Asynchronous Programming in C# | Deep Dive | Part 1 loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Asynchronous pattern</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Sep 13, 2021</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Basic Understanding of Asynchronous Programming in C# | Part 1</h3>
+
+                  <p class="blog-text">
+                    Explaining the basics of Asynchronous programming in C# with examples.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://www.youtube.com/watch?v=XijB8M6QAXY">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/YouTube-Thumbnail-part-2.png" alt="Asynchronous Pattern in C# | Deep Dive | Part 2" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Asynchronous pattern</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Sep 15, 2021</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Asynchronous Pattern in C# | Part 2</h3>
+
+                  <p class="blog-text">
+                    Explaining the Asynchronous pattern in C# in depth with examples.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="https://www.youtube.com/watch?v=9yZJMMSs3IU">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/YouTube-Thumbnail-part-3.png" alt="All about Task in C# | Deep Dive | Part 3" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Asynchronous pattern</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Sep 24, 2021</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">All about Task in C# | Part 3</h3>
+
+                  <p class="blog-text">
+                    Explaining all about the task object in C#. Task is the most important type in Asynchronous Programming.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn onsubmit="sendMail()">
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

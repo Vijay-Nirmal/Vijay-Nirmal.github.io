@@ -2,7 +2,7 @@
 
 GitHub.io page as a personal website
 
-Website: https://vijay-nirmal.github.io
+Website: https://vijaynirmal.com
 
 ## To create logo in svg
 1. Remove backgroud/white in png using https://www.remove.bg/

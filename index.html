@@ -1,935 +1,630 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Vijay Nirmal is an Architect working across AI architecture and software architecture, building agentic systems and resilient web platforms."
+    >
+    <meta name="theme-color" content="#090d14">
+    <title>Vijay Nirmal | AI Architect &amp; Software Architect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=Syne:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="icon" href="./archive/assets/images/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="#home" aria-label="Vijay Nirmal home">
+          <span class="brand-mark">VN</span>
+          <span class="brand-copy">
+            <span class="brand-name">Vijay Nirmal</span>
+            <span class="brand-role">Architect</span>
+          </span>
+        </a>
 
-<head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8KH5S0V9YZ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-8KH5S0V9YZ');
-  </script>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vijay Nirmal</title>
-
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
-
-<body>
-
-  <!--
-    - #MAIN
-  -->
-
-  <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/profile-pic.jpeg" alt="Vijay Nirmal" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Vijay Nirmal">Vijay Nirmal</h1>
-
-          <p class="title">Senior Web Developer</p>
+        <div class="identity-bar" aria-label="Primary professional focus">
+          <span class="identity-bar__item identity-bar__item--ai">AI Architect</span>
+          <span class="identity-bar__divider" aria-hidden="true"></span>
+          <span class="identity-bar__item identity-bar__item--software">Software Architect</span>
         </div>
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
+        <nav class="panel-nav" aria-label="Portfolio panels">
+          <a class="panel-link is-active" href="#home" data-panel-link>Home</a>
+          <a class="panel-link" href="#architecture" data-panel-link>Architecture</a>
+          <a class="panel-link" href="#developer" data-panel-link>Developer</a>
+          <a class="panel-link" href="#experience" data-panel-link>Experience</a>
+          <a class="panel-link" href="#proof" data-panel-link>Proof</a>
+          <a class="panel-link" href="#profile" data-panel-link>Profile</a>
+        </nav>
+      </header>
 
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
+      <main class="panel-stack">
+        <section class="panel panel--home is-active" id="home" data-panel data-title="AI Architect &amp; Software Architect">
+          <div class="hero-card">
+            <div class="hero-card__backdrop" aria-hidden="true">
+              <div class="hero-card__glow hero-card__glow--ai"></div>
+              <div class="hero-card__glow hero-card__glow--software"></div>
+              <div class="hero-card__axis"></div>
             </div>
 
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:me@vijaynirmal.com" class="contact-link">me@vijaynirmal.com</a>
+            <div class="hero-intro">
+              <p class="eyebrow">Two architecture disciplines in direct tension.</p>
+              <h1 class="hero-title">
+                <span class="hero-title__side hero-title__side--ai">AI Architect</span>
+                <span class="hero-title__divider" aria-hidden="true">//</span>
+                <span class="hero-title__side hero-title__side--software">Software Architect</span>
+              </h1>
+              <p class="hero-summary">Agent systems up front. Durable software underneath.</p>
             </div>
 
-          </li>
+            <div class="hero-split" aria-label="Dual practice overview">
+              <article class="domain-card domain-card--ai">
+                <p class="domain-card__label">AI Architect</p>
+                <h2>Agents. Context. Decisions.</h2>
+                <p>Build the intelligence layer: orchestration, retrieval, tool use, and control.</p>
+                <ul class="domain-list">
+                  <li>Agent systems</li>
+                  <li>Context and tool design</li>
+                  <li>Evaluation and guardrails</li>
+                  <li>Knowledge and retrieval architecture</li>
+                  <li>Enterprise AI integration</li>
+                </ul>
+              </article>
 
-          <li class="contact-item">
+              <article class="identity-bridge">
+                <p class="identity-bridge__stamp">Collision Zone</p>
+                <div class="identity-bridge__portrait">
+                  <img src="./archive/assets/images/profile-pic.jpeg" alt="Portrait of Vijay Nirmal" loading="eager">
+                </div>
+                <div class="identity-bridge__copy">
+                  <p class="identity-bridge__name">Vijay Nirmal</p>
+                  <p class="identity-bridge__title">AI Architect | Software Architect | Technical Lead</p>
+                  <p class="identity-bridge__meta">Tamil Nadu, India</p>
+                </div>
+              </article>
 
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
+              <article class="domain-card domain-card--software">
+                <p class="domain-card__label">Software Architect</p>
+                <h2>Platforms. Contracts. Scale.</h2>
+                <p>Build the system layer: services, frameworks, resilience, and performance.</p>
+                <ul class="domain-list">
+                  <li>Platform foundations</li>
+                  <li>Distributed systems</li>
+                  <li>Performance and resilience</li>
+                  <li>Performance and cost optimization</li>
+                  <li>Cloud modernization strategy</li>
+                </ul>
+              </article>
             </div>
 
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+12133522795" class="contact-link">+91 77083 65034</a>
+            <div class="hero-metrics" aria-label="Priority signals">
+              <article class="metric-card metric-card--experience">
+                <p class="metric-card__track">Experience</p>
+                <span class="metric-card__value">8+</span>
+                <span class="metric-card__label">Years in architecture</span>
+              </article>
+              <article class="metric-card metric-card--software">
+                <p class="metric-card__track">Software</p>
+                <span class="metric-card__value">30+</span>
+                <span class="metric-card__label">Frameworks built</span>
+              </article>
+              <article class="metric-card metric-card--software">
+                <p class="metric-card__track">Software</p>
+                <span class="metric-card__value">10+</span>
+                <span class="metric-card__label">Solutions designed</span>
+              </article>
+              <article class="metric-card metric-card--software">
+                <p class="metric-card__track">Software</p>
+                <span class="metric-card__value">50x</span>
+                <span class="metric-card__label">Peak speedup</span>
+              </article>
+              <article class="metric-card metric-card--lead">
+                <p class="metric-card__track">Leadership</p>
+                <span class="metric-card__value">6+</span>
+                <span class="metric-card__label">Teams led</span>
+              </article>
+              <article class="metric-card metric-card--ai">
+                <p class="metric-card__track">AI</p>
+                <span class="metric-card__value metric-card__value--text">Microsoft Agent Framework</span>
+                <span class="metric-card__label">Agent orchestration</span>
+              </article>
+              <article class="metric-card metric-card--ai">
+                <p class="metric-card__track">AI</p>
+                <span class="metric-card__value metric-card__value--text">Azure AI Foundry</span>
+                <span class="metric-card__label">Enterprise AI stack</span>
+              </article>
+              <article class="metric-card metric-card--software">
+                <p class="metric-card__track">Software</p>
+                <span class="metric-card__value metric-card__value--text">.NET + Azure</span>
+                <span class="metric-card__label">Platform architecture</span>
+              </article>
             </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Linkedin</p>
-
-              <a href="https://www.linkedin.com/in/vijay-nirmal/" class="contact-link external">@vijay-nirmal</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="logo-youtube"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Youtube</p>
-
-              <a href="https://www.youtube.com/channel/UC_tk_aCdD8C_6BZPknE9cMQ"
-                class="contact-link external">@BehindDotNet</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Tamil Nadu, India</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://stackoverflow.com/users/7331395/vijay-nirmal" class="social-link">
-              <ion-icon name="logo-stackoverflow"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://twitter.com/_Vijay_Nirmal_" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://github.com/Vijay-Nirmal" class="social-link">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            Full stack developer and technical lead extensively worked with .Net, Angular, Azure,
-            and Kubernetes. Expertise in developing frameworks, doing Proof-of-Concept, and designing solutions.
-          </p>
-
-          <p>
-            Passionated in software development even before joining any company, I was building applications using .Net
-            and contributed to to open-source projects.
-            Notabally I have contributed to Windows Community Toolkit project which is an open-source project maintained
-            by Microsoft for 3 years and became an official core team member with internal team meetings like standup.
-          </p>
+          </div>
         </section>
 
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-construct.svg" alt="construct icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Frameworks design and development</h4>
-
-                <p class="service-item-text">
-                  Design and develop high quality frameworks using .Net, NodeJs and Angular.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web development</h4>
-
-                <p class="service-item-text">
-                  High-quality web development using AspNetCore Web API, Anuglar and SQL Server/MongoDB.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg" alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Software Design and Proof-of-Concept</h4>
-
-                <p class="service-item-text">
-                  Come up with a software design and develop a Proof-of-Concept for the same.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-rocket.svg" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">DevOps Activity</h4>
-
-                <p class="service-item-text">
-                  Experience in deploying applications in Azure and Kubernetes using technologies like Azure Pipeline,
-                  Docker, Isto and Helm.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-        <!--
-          - Certifications
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">Certifications</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item vertical-center">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-azure-solutions-architect.svg" alt="construct icon" width="120">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Microsoft Certified:<br>Azure Solutions Architect</h4>
-              </div>
-
-            </li>
-
-            <li class="service-item vertical-center">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-Azure-Developer-Associate.svg" alt="construct icon" width="120">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Microsoft Certified:<br>Azure Developer Associate</h4>
-              </div>
-
-            </li>
-
-            <li class="service-item vertical-center">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-azure-administrator-associate.svg" alt="construct icon" width="120">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Microsoft Certified:<br>Azure Administrator Associate</h4>
-              </div>
-
-            </li>
-
-            <li class="service-item vertical-center">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-azure-ai-fundamentals.svg" alt="Web development icon" width="120">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Microsoft Certified:<br>Azure AI Fundamentals</h4>
-              </div>
-
-            </li>
-
-            <li class="service-item vertical-center">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-Azure-Fundamentals.svg" alt="Web development icon" width="120">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Microsoft Certified:<br>Azure Fundamentals</h4>
-              </div>
-
-            </li>
-
-            <li class="service-item vertical-center">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-azure-data-fundamentals.svg" alt="Web development icon" width="120">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Microsoft Certified:<br>Azure Data Fundamentals</h4>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-
-        <!--
-          - personal projects
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">Personal Projects</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-trophy.svg" alt="construct icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">2 Time Hackathon Winner</h4>
-
-                <p class="service-item-text">
-                  1. Proposed a broader idea to use generative AI (OpenAI) in educational and showcased a
-                  prototype.<br>- Neudesic, IBM
-                  <br><br>2. Proposed an idea to convert existing application to be adapted for covid lockdown
-                  situation.<br>- HRBlock
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-bar-chart.svg" alt="Web development icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Critic Review Analyser (WIP)</h4>
-
-                <p class="service-item-text">
-                  Developing a tool that scrapes Metacritic for all video game data like ratings, reviews, etc and
-                  created a custom dynamic UI to analyze and visualize the data.
-                  <br><br>Plan to use data science to identify patterns, biases and trends in video game critics.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-server.svg" alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Personal Home Server</h4>
-
-                <p class="service-item-text">
-                  1. Self Hosting multiple website using personal home server.
-                  <br><br>2. NAS server to save and share files with
-                  family using NextCloud
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-medkit.svg" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">EMR Application for Hospital</h4>
-
-                <p class="service-item-text">
-                  EMR application is a health records and medical practice management application that is built on top
-                  of an open-source implementation and deployed in Self-Hosted server.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-        <!--
-          - clients
-        -->
-
-        <!-- <section class="clients">
-
-          <h3 class="h3 clients-title">Clients</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
-              </a>
-            </li>
-
-            <li class="clients-item">
-              <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
-              </a>
-            </li>
-
-          </ul>
-
-        </section> -->
-
-      </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Framework/Library Development</h5>
-                <data value="80">95%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 95%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">System Design and POC</h5>
-                <data value="70">85%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">.Net Web API / Microservices</h5>
-                <data value="90">100%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 100%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Angular</h5>
-                <data value="50">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">SQL Server and NoSQL Database (MongoDB, ConsmosDB)</h5>
-                <data value="50">70%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Devops / CICD / Kubernetes</h5>
-                <data value="50">75%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 75%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Azure technology stack</h5>
-                <data value="50">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">OpenAI</h5>
-                <data value="50">55%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 55%;"></div>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
+        <section class="panel" id="architecture" data-panel data-title="Architecture">
+          <div class="panel-heading">
+            <p class="panel-heading__index">01 / Dual Practice</p>
+            <h2>Architecture across Microsoft platforms and modern web stacks.</h2>
+            <p>From Microsoft Agent Framework and Azure AI Foundry to LangChain, .NET, Node.js, Angular, APIs, and Azure platforms.</p>
           </div>
 
-          <ol class="timeline-list">
+          <div class="capability-grid">
+            <article class="capability-column capability-column--ai">
+              <div class="capability-column__header">
+                <p class="capability-column__tag">AI Architect</p>
+                <h3>AI focus</h3>
+              </div>
+              <ul class="capability-list">
+                <li>Microsoft Agent Framework and LangChain orchestration</li>
+                <li>Azure AI Foundry and Azure OpenAI workflows</li>
+                <li>MCP, A2A, and enterprise tool integration</li>
+                <li>Retrieval, grounding, and knowledge architecture</li>
+                <li>Evaluation, guardrails, and human approval loops</li>
+              </ul>
+              <div class="signature-note">
+                <p class="signature-note__label">Signature move</p>
+                <p>AI systems that blend Microsoft platform depth with practical orchestration and production governance.</p>
+              </div>
+            </article>
 
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Technical Lead (Client Side), Neudesic</h4>
-
-              <span>May 2022 — Present</span>
-
-              <p class="timeline-text">
-                One of 4 Tech Lead the client-side project which as 8 developement teams. My responsiblity is to design
-                and develop the architecture for the company's internal application. Also, working on POC works for new
-                technologies and concepts.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Software Engineer, H&R Block</h4>
-
-              <span>Jan 2019 — May 2022</span>
-
-              <p class="timeline-text">
-                Part of the framework team, desiging, developed and maintained the framework for the company's internal
-                applications along with POC works for new technologies and concepts. Also, setting standards and
-                guidelines for the team to develop Web Applications and APIs.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title"><a class="external"
-                  href="https://github.com/orgs/CommunityToolkit/teams/hall-of-fame" target="_blank">Open-source
-                  Contributer, Windows Community Toolkit (Microsoft)</a></h4>
-
-              <span>Jun 2016 — Mar 2019</span>
-
-              <p class="timeline-text">
-                Core team member of Microsoft's open-source project Windows Community Toolkit. Helped implement new
-                features, maintenance, PR review and documentation
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
+            <article class="capability-column capability-column--software">
+              <div class="capability-column__header">
+                <p class="capability-column__tag">Software Architect</p>
+                <h3>Software focus</h3>
+              </div>
+              <ul class="capability-list">
+                <li>.NET, AspNetCore, and Azure solution design</li>
+                <li>API contracts, microservices, and event-driven integration</li>
+                <li>Reusable platform foundations across .NET, Node.js, and Azure</li>
+                <li>Performance, resilience, and cost optimization</li>
+                <li>Legacy modernization through Web Components and WASM</li>
+              </ul>
+              <div class="signature-note">
+                <p class="signature-note__label">Signature move</p>
+                <p>Platforms that combine Microsoft strengths with modern web engineering to scale delivery speed and reliability.</p>
+              </div>
+            </article>
           </div>
 
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Amrita Vishwa Vidyapeetham</h4>
-
-              <span>Jun 2015 - Apr 2019</span>
-
-              <p class="timeline-text">
-                B. Tech. Computer Science
-                <br>Graduated with distinction
-              </p>
-
-            </li>
-
-          </ol>
-
+          <div class="principle-grid">
+            <article class="principle-card principle-card--software">
+              <p class="principle-card__track">Software</p>
+              <h3>Performance is architecture</h3>
+              <p>Throughput, latency, and cost are design inputs, not cleanup after launch.</p>
+            </article>
+            <article class="principle-card principle-card--ai">
+              <p class="principle-card__track">AI</p>
+              <h3>Agent orchestration</h3>
+              <p>Design coordinated multi-step flows across Microsoft Agent Framework and LangChain runtimes.</p>
+            </article>
+            <article class="principle-card principle-card--software">
+              <p class="principle-card__track">Software</p>
+              <h3>Zero-downtime ETL redesign</h3>
+              <p>Reshape brittle data flows to eliminate recurring downtime and preserve delivery continuity.</p>
+            </article>
+            <article class="principle-card principle-card--ai">
+              <p class="principle-card__track">AI</p>
+              <h3>Azure AI Foundry</h3>
+              <p>Shape enterprise AI delivery around evaluation, deployment fit, and operational governance.</p>
+            </article>
+            <article class="principle-card principle-card--software">
+              <p class="principle-card__track">Software</p>
+              <h3>Event-driven consistency</h3>
+              <p>Use event-driven design with strong consistency where business workflows cannot tolerate drift.</p>
+            </article>
+            <article class="principle-card principle-card--ai">
+              <p class="principle-card__track">AI</p>
+              <h3>MCP integration</h3>
+              <p>Connect tools, context, and enterprise systems through protocol-driven orchestration patterns.</p>
+            </article>
+            <article class="principle-card principle-card--software">
+              <p class="principle-card__track">Software</p>
+              <h3>Proof first, scale second</h3>
+              <p>Prove architecture direction early, then harden the path that survives real usage.</p>
+            </article>
+            <article class="principle-card principle-card--ai">
+              <p class="principle-card__track">AI</p>
+              <h3>RAG grounding</h3>
+              <p>Use retrieval and knowledge design to ground model responses in current business context.</p>
+            </article>
+            <article class="principle-card principle-card--software">
+              <p class="principle-card__track">Software</p>
+              <h3>Platforms compound</h3>
+              <p>Shared frameworks and architecture primitives multiply every team's output.</p>
+            </article>
+            <article class="principle-card principle-card--ai">
+              <p class="principle-card__track">AI</p>
+              <h3>Human approval loops</h3>
+              <p>Keep critical decisions observable and reviewable with human-in-the-loop checkpoints.</p>
+            </article>
+            <article class="principle-card principle-card--software">
+              <p class="principle-card__track">Software</p>
+              <h3>Modernize by evolution</h3>
+              <p>Upgrade real enterprise systems without forcing wasteful rewrites.</p>
+            </article>
+            <article class="principle-card principle-card--ai">
+              <p class="principle-card__track">AI</p>
+              <h3>Evaluation and guardrails</h3>
+              <p>Measure behavior, constrain risk, and harden AI systems before they become operational dependencies.</p>
+            </article>
+          </div>
         </section>
 
-      </article>
+        <section class="panel" id="developer" data-panel data-title="Developer">
+          <div class="panel-heading">
+            <p class="panel-heading__index">02 / Developer Depth</p>
+            <h2>Development depth from framework design to cloud delivery.</h2>
+            <p>Built from the resume's backend, frontend, database, messaging, Azure, DevOps, testing, and container platform experience.</p>
+          </div>
 
-      <!--
-        - #BLOG
-      -->
+          <div class="developer-grid">
+            <article class="developer-card developer-card--ai">
+              <p class="developer-card__track">AI</p>
+              <h3>AI engineering and agent delivery</h3>
+              <ul class="developer-card__list">
+                <li>Microsoft Agent Framework, LangChain, and OpenAI</li>
+                <li>MCP integration and agent workflows</li>
+                <li>Retrieval, grounding, and evaluation patterns</li>
+              </ul>
+            </article>
 
-      <article class="blog" data-page="blog">
+            <article class="developer-card developer-card--backend">
+              <p class="developer-card__track">Backend</p>
+              <h3>.NET, Node.js, and service engineering</h3>
+              <ul class="developer-card__list">
+                <li>AspNetCore, NodeJs, and NestJs</li>
+                <li>Web API and microservices implementation</li>
+                <li>Framework and library development</li>
+              </ul>
+            </article>
 
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
+            <article class="developer-card developer-card--frontend">
+              <p class="developer-card__track">Frontend</p>
+              <h3>Angular and component-based UI delivery</h3>
+              <ul class="developer-card__list">
+                <li>Angular, HTML, CSS, and SCSS</li>
+                <li>Web Components and UI implementation</li>
+                <li>Modern experiences inside legacy systems</li>
+              </ul>
+            </article>
 
-        <section class="blog-posts">
+            <article class="developer-card developer-card--data">
+              <p class="developer-card__track">Data</p>
+              <h3>SQL and NoSQL application data design</h3>
+              <ul class="developer-card__list">
+                <li>SQL Server, MongoDB, and CosmosDB</li>
+                <li>SQL and NoSQL data modeling</li>
+                <li>Cross-store read and write model sync</li>
+              </ul>
+            </article>
 
-          <ul class="blog-posts-list">
-            <li class="blog-post-item">
-              <a href="https://www.youtube.com/watch?v=FhHpNMIAGCI">
+            <article class="developer-card developer-card--messaging">
+              <p class="developer-card__track">Messaging</p>
+              <h3>Asynchronous and event-driven integration</h3>
+              <ul class="developer-card__list">
+                <li>Kafka, RabbitMQ, Service Bus, and Event Hub</li>
+                <li>SignalR and real-time communication</li>
+                <li>Event-driven flows with strong consistency</li>
+              </ul>
+            </article>
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/YouTube-Thumbnail-part-1.png"
-                    alt="Basic Understanding of Asynchronous Programming in C# | Deep Dive | Part 1 loading=" lazy">
-                </figure>
+            <article class="developer-card developer-card--infra">
+              <p class="developer-card__track">Infra</p>
+              <h3>Azure, DevOps, and container platforms</h3>
+              <ul class="developer-card__list">
+                <li>Azure tech stack, CloudOps, and Azure CI/CD</li>
+                <li>Kubernetes, AKS, Istio, and containerization</li>
+                <li>Azure Pipelines and deployment automation</li>
+              </ul>
+            </article>
+          </div>
 
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Asynchronous pattern</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Sep 13, 2021</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Basic Understanding of Asynchronous Programming in C# | Part 1</h3>
-
-                  <p class="blog-text">
-                    Explaining the basics of Asynchronous programming in C# with examples.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="https://www.youtube.com/watch?v=XijB8M6QAXY">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/YouTube-Thumbnail-part-2.png"
-                    alt="Asynchronous Pattern in C# | Deep Dive | Part 2" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Asynchronous pattern</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Sep 15, 2021</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Asynchronous Pattern in C# | Part 2</h3>
-
-                  <p class="blog-text">
-                    Explaining the Asynchronous pattern in C# in depth with examples.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="https://www.youtube.com/watch?v=9yZJMMSs3IU">
-
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/YouTube-Thumbnail-part-3.png"
-                    alt="All about Task in C# | Deep Dive | Part 3" loading="lazy">
-                </figure>
-
-                <div class="blog-content">
-
-                  <div class="blog-meta">
-                    <p class="blog-category">Asynchronous pattern</p>
-
-                    <span class="dot"></span>
-
-                    <time datetime="2022-02-23">Sep 24, 2021</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">All about Task in C# | Part 3</h3>
-
-                  <p class="blog-text">
-                    Explaining all about the task object in C#. Task is the most important type in Asynchronous
-                    Programming.
-                  </p>
-
-                </div>
-
-              </a>
-            </li>
-
-          </ul>
-
+          <div class="developer-summary-grid" aria-label="Developer practice highlights">
+            <article class="stack-card">
+              <p class="stack-card__label">Architecture</p>
+              <p>System design and solution shaping</p>
+            </article>
+            <article class="stack-card">
+              <p class="stack-card__label">Patterns</p>
+              <p>Design patterns and reusable abstractions</p>
+            </article>
+            <article class="stack-card">
+              <p class="stack-card__label">Delivery</p>
+              <p>Proof-of-concept to production hardening</p>
+            </article>
+            <article class="stack-card">
+              <p class="stack-card__label">Quality</p>
+              <p>Unit Testing and Test Driven Development</p>
+            </article>
+            <article class="stack-card">
+              <p class="stack-card__label">Performance</p>
+              <p>Profiling, optimization, and scale-aware design</p>
+            </article>
+            <article class="stack-card">
+              <p class="stack-card__label">Leadership</p>
+              <p>Technical guidance and cross-team enablement</p>
+            </article>
+          </div>
         </section>
 
-      </article>
+        <section class="panel" id="experience" data-panel data-title="Experience">
+          <div class="panel-heading">
+            <p class="panel-heading__index">03 / Experience</p>
+            <h2>Hands-on leadership across AI delivery, platform architecture, and performance engineering.</h2>
+            <p>
+              The work history is not a list of titles. It is a record of building systems, removing delivery risk, and
+              creating reusable architecture under real product pressure.
+            </p>
+          </div>
 
+          <div class="timeline-grid">
+            <article class="timeline-card timeline-card--current">
+              <div class="timeline-card__topline">
+                <p class="timeline-card__role">Technical Lead</p>
+                <p class="timeline-card__company">Qualibar</p>
+              </div>
+              <p class="timeline-card__period">Jul 2025 to present</p>
+              <ul class="timeline-card__list">
+                <li>Designed an AI system and led the team that delivered an agentic application using LangChain and Microsoft Agent Framework.</li>
+                <li>Reshaped lead ETL architecture to remove a recurring downtime window and support zero-downtime delivery.</li>
+                <li>Drove the path from architecture design to successful production rollout.</li>
+              </ul>
+            </article>
 
+            <article class="timeline-card">
+              <div class="timeline-card__topline">
+                <p class="timeline-card__role">Technical Lead</p>
+                <p class="timeline-card__company">Neudesic</p>
+              </div>
+              <p class="timeline-card__period">May 2022 to Jul 2025</p>
+              <ul class="timeline-card__list">
+                <li>Led architecture across 6+ teams while continuing hands-on code contribution.</li>
+                <li>Designed 10+ reusable libraries and frameworks in .NET and Node.js.</li>
+                <li>Built high-value proofs including .NET in the browser via WASM, Web Components inside legacy applications, and continuous SQL Server to MongoDB model sync.</li>
+                <li>Improved critical workloads by up to 50x while remaining cost conscious.</li>
+              </ul>
+            </article>
 
+            <article class="timeline-card">
+              <div class="timeline-card__topline">
+                <p class="timeline-card__role">Software Engineer</p>
+                <p class="timeline-card__company">H&amp;R Block</p>
+              </div>
+              <p class="timeline-card__period">Jan 2019 to May 2022</p>
+              <ul class="timeline-card__list">
+                <li>Designed and implemented 8+ internal frameworks in .NET.</li>
+                <li>Built 5+ AspNetCore microservices and Angular user interfaces.</li>
+                <li>Optimized code paths for over 500% throughput improvement and roughly 60% lower response time.</li>
+              </ul>
+            </article>
+          </div>
 
+          <div class="stack-grid" aria-label="Technology experience">
+            <article class="stack-card">
+              <p class="stack-card__label">Backend</p>
+              <p>AspNetCore, Node.js, NestJS, Web APIs, Microservices</p>
+            </article>
+            <article class="stack-card">
+              <p class="stack-card__label">AI</p>
+              <p>Microsoft Agent Framework, LangChain, MCP, A2A, OpenAI</p>
+            </article>
+            <article class="stack-card">
+              <p class="stack-card__label">Frontend</p>
+              <p>Angular, HTML, CSS, SCSS, Web Components</p>
+            </article>
+            <article class="stack-card">
+              <p class="stack-card__label">Data</p>
+              <p>SQL Server, MongoDB, CosmosDB, Kafka, RabbitMQ, Service Bus, Event Hub</p>
+            </article>
+            <article class="stack-card">
+              <p class="stack-card__label">Cloud</p>
+              <p>Azure, Kubernetes, AKS, Istio, SignalR, Azure CI/CD</p>
+            </article>
+          </div>
+        </section>
 
-      <!--
-        - #CONTACT
-      -->
+        <section class="panel" id="proof" data-panel data-title="Proof">
+          <div class="panel-heading">
+            <p class="panel-heading__index">04 / Proof</p>
+            <h2>Selected proof points instead of filler portfolio tiles.</h2>
+            <p>
+              These are the kinds of outcomes the work optimizes for: shipping AI systems, compounding platform leverage,
+              and raising the technical ceiling of the teams involved.
+            </p>
+          </div>
 
-      <article class="contact" data-page="contact">
+          <div class="proof-grid">
+            <article class="proof-card proof-card--ai">
+              <p class="proof-card__tag">Production AI</p>
+              <h3>Agentic system delivery at Qualibar</h3>
+              <p>Led the architecture and team delivery for an agentic application built with LangChain and Microsoft Agent Framework.</p>
+            </article>
+            <article class="proof-card proof-card--software">
+              <p class="proof-card__tag">Platform Leverage</p>
+              <h3>Frameworks that scaled across teams</h3>
+              <p>Designed reusable libraries and frameworks that removed repetition and accelerated delivery in both .NET and Node.js environments.</p>
+            </article>
+            <article class="proof-card proof-card--impact">
+              <p class="proof-card__tag">Performance</p>
+              <h3>High-impact optimization work</h3>
+              <p>Improved critical application paths by up to 50x in some cases while also reducing cost and operational friction.</p>
+            </article>
+            <article class="proof-card proof-card--modernization">
+              <p class="proof-card__tag">Modernization</p>
+              <h3>Bridging old and new architecture safely</h3>
+              <p>Used WASM, Web Components, and hybrid integration patterns to bring modern capabilities into legacy product estates.</p>
+            </article>
+          </div>
 
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
+          <div class="showcase-grid">
+            <article class="showcase-card">
+              <div class="showcase-card__heading">
+                <p class="showcase-card__tag">Selected Projects</p>
+                <h3>High-signal work beyond client delivery</h3>
+              </div>
+              <div class="project-grid">
+                <a class="project-link-card" href="https://github.com/Vijay-Nirmal/AIToolkit" target="_blank" rel="noreferrer">
+                  <span class="project-link-card__meta">C# / Recent</span>
+                  <strong class="project-link-card__name">AIToolkit</strong>
+                  <span class="project-link-card__desc">Focused .NET packages for building AI tooling and integrations.</span>
+                </a>
+                <a class="project-link-card" href="https://github.com/Vijay-Nirmal/AzureAISearchExplorer" target="_blank" rel="noreferrer">
+                  <span class="project-link-card__meta">TypeScript / Pinned</span>
+                  <strong class="project-link-card__name">AzureAISearchExplorer</strong>
+                  <span class="project-link-card__desc">Lightweight GUI for exploring and managing Azure AI Search services.</span>
+                </a>
+                <a class="project-link-card" href="https://github.com/Vijay-Nirmal/MCPCopilotRelay" target="_blank" rel="noreferrer">
+                  <span class="project-link-card__meta">TypeScript / MCP</span>
+                  <strong class="project-link-card__name">MCPCopilotRelay</strong>
+                  <span class="project-link-card__desc">Generates VS Code extensions from MCP servers by mapping tools and resources to editor capabilities.</span>
+                </a>
+                <a class="project-link-card" href="https://github.com/Vijay-Nirmal/JsonCraft" target="_blank" rel="noreferrer">
+                  <span class="project-link-card__meta">C# / Performance</span>
+                  <strong class="project-link-card__name">JsonCraft</strong>
+                  <span class="project-link-card__desc">High-performance .NET JSONPath library built on top of System.Text.Json.</span>
+                </a>
+                <a class="project-link-card" href="https://github.com/Vijay-Nirmal/WebInteractMCP" target="_blank" rel="noreferrer">
+                  <span class="project-link-card__meta">TypeScript / MCP</span>
+                  <strong class="project-link-card__name">WebInteractMCP</strong>
+                  <span class="project-link-card__desc">Turns web applications into MCP servers and expands the practical MCP ecosystem.</span>
+                </a>
+                <a class="project-link-card" href="https://github.com/microsoft/garnet" target="_blank" rel="noreferrer">
+                  <span class="project-link-card__meta">C# / Official Contribution</span>
+                  <strong class="project-link-card__name">Microsoft Garnet Contributor</strong>
+                  <span class="project-link-card__desc">Official contributor to Microsoft's high-performance Garnet cache-store project.</span>
+                </a>
+              </div>
+            </article>
 
-        <section class="contact-form">
+            <article class="showcase-card">
+              <div class="showcase-card__heading">
+                <p class="showcase-card__tag">Knowledge Sharing</p>
+                <h3>Behind .NET video series</h3>
+              </div>
+              <div class="media-grid">
+                <a class="media-card" href="https://www.youtube.com/watch?v=FhHpNMIAGCI" target="_blank" rel="noreferrer">
+                  <img src="./archive/assets/images/YouTube-Thumbnail-part-1.png" alt="All about Task video thumbnail" loading="lazy">
+                  <span>All about Task</span>
+                </a>
+                <a class="media-card" href="https://www.youtube.com/watch?v=XijB8M6QAXY" target="_blank" rel="noreferrer">
+                  <img src="./archive/assets/images/YouTube-Thumbnail-part-2.png" alt="Asynchronous Pattern in C# video thumbnail" loading="lazy">
+                  <span>Asynchronous Pattern in C#</span>
+                </a>
+                <a class="media-card" href="https://www.youtube.com/watch?v=9yZJMMSs3IU" target="_blank" rel="noreferrer">
+                  <img src="./archive/assets/images/YouTube-Thumbnail-part-3.png" alt="Basic Understanding video thumbnail" loading="lazy">
+                  <span>Basic Understanding</span>
+                </a>
+              </div>
+            </article>
+          </div>
 
-          <h3 class="h3 form-title">Contact Form</h3>
-
-          <form action="#" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
-
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+          <article class="certification-card">
+            <div class="certification-card__heading">
+              <p class="showcase-card__tag">Microsoft Certifications</p>
+              <h3>Cloud and platform credibility</h3>
             </div>
-
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
-
-            <button class="form-btn" type="submit" disabled data-form-btn onsubmit="sendMail()">
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
-
-          </form>
-
+            <div class="certification-grid">
+              <div class="badge-card">
+                <img src="./archive/assets/images/icon-azure-solutions-architect.svg" alt="Azure Solutions Architect badge" loading="lazy">
+                <span>Azure Solutions Architect</span>
+              </div>
+              <div class="badge-card">
+                <img src="./archive/assets/images/icon-Azure-Developer-Associate.svg" alt="Azure Developer Associate badge" loading="lazy">
+                <span>Azure Developer Associate</span>
+              </div>
+              <div class="badge-card">
+                <img src="./archive/assets/images/icon-azure-administrator-associate.svg" alt="Azure Administrator Associate badge" loading="lazy">
+                <span>Azure Administrator Associate</span>
+              </div>
+              <div class="badge-card">
+                <img src="./archive/assets/images/icon-azure-ai-fundamentals.svg" alt="Azure AI Fundamentals badge" loading="lazy">
+                <span>Azure AI Fundamentals</span>
+              </div>
+              <div class="badge-card">
+                <img src="./archive/assets/images/icon-azure-data-fundamentals.svg" alt="Azure Data Fundamentals badge" loading="lazy">
+                <span>Azure Data Fundamentals</span>
+              </div>
+              <div class="badge-card">
+                <img src="./archive/assets/images/icon-Azure-Fundamentals.svg" alt="Azure Fundamentals badge" loading="lazy">
+                <span>Azure Fundamentals</span>
+              </div>
+            </div>
+          </article>
         </section>
 
-      </article>
+        <section class="panel" id="profile" data-panel data-title="Profile">
+          <div class="panel-heading">
+            <p class="panel-heading__index">05 / Profile</p>
+            <h2>Profile, community footprint, and contact coordinates.</h2>
+            <p>
+              This portfolio is meant to show the shape of the work. The details below anchor that work in community,
+              publication, and day-to-day engineering practice.
+            </p>
+          </div>
 
+          <div class="profile-grid">
+            <article class="profile-card">
+              <p class="profile-card__tag">Coordinates</p>
+              <h3>Where to reach me</h3>
+              <ul class="detail-list">
+                <li><span>Email</span><a href="mailto:pon.vijaynirmal@outlook.com">pon.vijaynirmal@outlook.com</a></li>
+                <li><span>Phone</span><a href="tel:+917708365034">+91 77083 65034</a></li>
+                <li><span>Website</span><a href="https://vijaynirmal.com" target="_blank" rel="noreferrer">vijaynirmal.com</a></li>
+                <li><span>Location</span><strong>Tamil Nadu, India</strong></li>
+              </ul>
+            </article>
+
+            <article class="profile-card">
+              <p class="profile-card__tag">Profiles</p>
+              <h3>Public engineering footprint</h3>
+              <ul class="detail-list">
+                <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/vijay-nirmal/" target="_blank" rel="noreferrer">@vijay-nirmal</a></li>
+                <li><span>GitHub</span><a href="https://github.com/Vijay-Nirmal" target="_blank" rel="noreferrer">Vijay-Nirmal</a></li>
+                <li><span>Stack Overflow</span><a href="https://stackoverflow.com/users/7331395/vijay-nirmal" target="_blank" rel="noreferrer">vijay-nirmal</a></li>
+                <li><span>YouTube</span><a href="https://www.youtube.com/channel/UC_tk_aCdD8C_6BZPknE9cMQ" target="_blank" rel="noreferrer">Behind .NET</a></li>
+              </ul>
+            </article>
+
+            <article class="profile-card">
+              <p class="profile-card__tag">Community</p>
+              <h3>Open source and technical contribution</h3>
+              <ul class="bullet-list">
+                <li>Contributor to Microsoft's open-source Redis project, Garnet.</li>
+                <li>Former core team member of Microsoft's Windows Community Toolkit open-source project.</li>
+                <li>Stack Overflow contributor with 5900+ points and 120+ accepted answers.</li>
+                <li>Content creator behind deep-dive .NET videos on YouTube.</li>
+              </ul>
+            </article>
+
+            <article class="profile-card">
+              <p class="profile-card__tag">Publication</p>
+              <h3>Research and education</h3>
+              <div class="profile-note">
+                <p class="profile-note__title">Blind Vision</p>
+                <p>
+                  Co-authored a 2020 paper on 3D audio feedback for visually impaired navigation using Python, OpenCV,
+                  IoT, and Raspberry Pi.
+                </p>
+              </div>
+              <div class="profile-note">
+                <p class="profile-note__title">Amrita Vishwa Vidyapeetham</p>
+                <p>B.Tech. Computer Science, Jun 2015 to Apr 2019 | CGPA 8.11 | Graduated with distinction.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
     </div>
 
-  </main>
-
-
-
-
-
-
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
-
+    <script src="./assets/js/script.js" defer></script>
+  </body>
 </html>

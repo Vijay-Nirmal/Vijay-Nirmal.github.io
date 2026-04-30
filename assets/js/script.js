@@ -1,169 +1,159 @@
-'use strict';
+const panelLinks = Array.from(document.querySelectorAll("[data-panel-link]"));
+const panels = Array.from(document.querySelectorAll("[data-panel]"));
+const nav = document.querySelector(".panel-nav");
+const defaultTitle = "Vijay Nirmal | AI Architect & Software Architect";
+const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+let revealAnimationFrame = null;
+const revealSelector = [
+  ".panel-heading",
+  ".metric-card",
+  ".developer-card",
+  ".capability-column",
+  ".principle-card",
+  ".timeline-card",
+  ".stack-card",
+  ".proof-card",
+  ".showcase-card",
+  ".certification-card",
+  ".badge-card",
+  ".profile-card",
+  ".media-card"
+].join(", ");
 
+const getPanelIdFromHash = () => window.location.hash.replace("#", "").trim().toLowerCase();
+const getPanelById = (panelId) => panels.find((panel) => panel.id === panelId) || panels[0];
 
-// element toggle function
-const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
+const registerRevealTargets = () => {
+  if (prefersReducedMotion) {
+    return;
+  }
 
+  panels.forEach((panel) => {
+    const revealTargets = Array.from(panel.querySelectorAll(revealSelector));
 
-
-// sidebar variables
-const sidebar = document.querySelector("[data-sidebar]");
-const sidebarBtn = document.querySelector("[data-sidebar-btn]");
-
-// sidebar toggle functionality for mobile
-sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
-
-
-
-// testimonials variables
-const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
-const modalContainer = document.querySelector("[data-modal-container]");
-const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
-const overlay = document.querySelector("[data-overlay]");
-
-// modal variable
-const modalImg = document.querySelector("[data-modal-img]");
-const modalTitle = document.querySelector("[data-modal-title]");
-const modalText = document.querySelector("[data-modal-text]");
-
-// modal toggle function
-const testimonialsModalFunc = function () {
-  modalContainer.classList.toggle("active");
-  overlay.classList.toggle("active");
-}
-
-// add click event to all modal items
-for (let i = 0; i < testimonialsItem.length; i++) {
-
-  testimonialsItem[i].addEventListener("click", function () {
-
-    modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
-    modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
-    modalTitle.innerHTML = this.querySelector("[data-testimonials-title]").innerHTML;
-    modalText.innerHTML = this.querySelector("[data-testimonials-text]").innerHTML;
-
-    testimonialsModalFunc();
-
-  });
-
-}
-
-// add click event to modal close button
-modalCloseBtn?.addEventListener("click", testimonialsModalFunc);
-overlay?.addEventListener("click", testimonialsModalFunc);
-
-
-
-// custom select variables
-const select = document.querySelector("[data-select]");
-const selectItems = document.querySelectorAll("[data-select-item]");
-const selectValue = document.querySelector("[data-selecct-value]");
-const filterBtn = document.querySelectorAll("[data-filter-btn]");
-
-if (select && selectItems && selectValue) {
-  select?.addEventListener("click", function () { elementToggleFunc(this); });
-  
-  // add event in all select items
-  for (let i = 0; i < selectItems.length; i++) {
-    selectItems[i].addEventListener("click", function () {
-  
-      let selectedValue = this.innerText.toLowerCase();
-      selectValue.innerText = this.innerText;
-      elementToggleFunc(select);
-      filterFunc(selectedValue);
-  
+    revealTargets.forEach((target, index) => {
+      target.classList.add("reveal-target");
+      target.style.setProperty("--reveal-delay", `${Math.min(index, 7) * 55}ms`);
     });
-  }
-}
+  });
 
-// filter variables
-const filterItems = document.querySelectorAll("[data-filter-item]");
+  document.body.dataset.motionReady = "true";
+};
 
-const filterFunc = function (selectedValue) {
-
-  for (let i = 0; i < filterItems.length; i++) {
-
-    if (selectedValue === "all") {
-      filterItems[i].classList.add("active");
-    } else if (selectedValue === filterItems[i].dataset.category) {
-      filterItems[i].classList.add("active");
-    } else {
-      filterItems[i].classList.remove("active");
-    }
-
+const animatePanel = (activePanel) => {
+  if (prefersReducedMotion) {
+    return;
   }
 
-}
+  if (revealAnimationFrame) {
+    cancelAnimationFrame(revealAnimationFrame);
+    revealAnimationFrame = null;
+  }
 
-// add event in all filter button items for large screen\
-if (filterBtn) {
-  let lastClickedBtn = filterBtn[0];
-  
-  for (let i = 0; i < filterBtn.length; i++) {
-  
-    filterBtn[i].addEventListener("click", function () {
-  
-      let selectedValue = this.innerText.toLowerCase();
-      selectValue.innerText = this.innerText;
-      filterFunc(selectedValue);
-  
-      lastClickedBtn.classList.remove("active");
-      this.classList.add("active");
-      lastClickedBtn = this;
-  
+  panels.forEach((panel) => {
+    panel.querySelectorAll(".reveal-target").forEach((target) => {
+      target.classList.remove("is-visible");
     });
-  
-  }
-}
+  });
 
+  const activeTargets = Array.from(activePanel.querySelectorAll(".reveal-target"));
 
+  activeTargets.forEach((target) => {
+    void target.offsetWidth;
+  });
 
-// contact form variables
-const form = document.querySelector("[data-form]");
-const formInputs = document.querySelectorAll("[data-form-input]");
-const formBtn = document.querySelector("[data-form-btn]");
+  revealAnimationFrame = requestAnimationFrame(() => {
+    revealAnimationFrame = requestAnimationFrame(() => {
+      activeTargets.forEach((target) => {
+        target.classList.add("is-visible");
+      });
 
-// add event to all form input field
-for (let i = 0; i < formInputs.length; i++) {
-  formInputs[i].addEventListener("input", function () {
+      revealAnimationFrame = null;
+    });
+  });
+};
 
-    // check form validation
-    if (form.checkValidity()) {
-      formBtn.removeAttribute("disabled");
+const activatePanel = (panelId) => {
+  const activePanel = getPanelById(panelId);
+
+  panels.forEach((panel) => {
+    const isActive = panel === activePanel;
+    panel.classList.toggle("is-active", isActive);
+    panel.hidden = !isActive;
+    panel.setAttribute("aria-hidden", String(!isActive));
+  });
+
+  panelLinks.forEach((link) => {
+    const isActive = link.getAttribute("href") === `#${activePanel.id}`;
+    link.classList.toggle("is-active", isActive);
+
+    if (isActive) {
+      link.setAttribute("aria-current", "page");
     } else {
-      formBtn.setAttribute("disabled", "");
+      link.removeAttribute("aria-current");
     }
-
   });
-}
 
+  const panelTitle = activePanel.dataset.title;
+  document.title = panelTitle ? `Vijay Nirmal | ${panelTitle}` : defaultTitle;
+  animatePanel(activePanel);
+};
 
+registerRevealTargets();
+document.body.dataset.panelsReady = "true";
+activatePanel(getPanelIdFromHash());
 
-// page navigation variables
-const navigationLinks = document.querySelectorAll("[data-nav-link]");
-const pages = document.querySelectorAll("[data-page]");
+window.addEventListener("hashchange", () => {
+  activatePanel(getPanelIdFromHash());
+});
 
-// add event to all nav link
-for (let i = 0; i < navigationLinks.length; i++) {
-  navigationLinks[i].addEventListener("click", function () {
+window.addEventListener("pageshow", () => {
+  activatePanel(getPanelIdFromHash());
+});
 
-    for (let i = 0; i < pages.length; i++) {
-      if (this.innerHTML.toLowerCase() === pages[i].dataset.page) {
-        pages[i].classList.add("active");
-        navigationLinks[i].classList.add("active");
-        window.scrollTo(0, 0);
-      } else {
-        pages[i].classList.remove("active");
-        navigationLinks[i].classList.remove("active");
-      }
+panelLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    const panelId = link.getAttribute("href").slice(1);
+
+    if (getPanelIdFromHash() === panelId) {
+      activatePanel(panelId);
     }
-
   });
-}
+});
 
-function sendMail() {
-  let link = "mailto:pon.vijaynirmal@outlook.com"
-    + "?subject=Contact Mail From Personal Website"
-    + "&body=" + encodeURIComponent(formInputs.value);
-  window.location.href = link;
-}
+nav?.addEventListener("keydown", (event) => {
+  if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(event.key)) {
+    return;
+  }
+
+  const currentIndex = panelLinks.findIndex((link) => link.classList.contains("is-active"));
+  let nextIndex = currentIndex;
+
+  if (event.key === "ArrowRight") {
+    nextIndex = (currentIndex + 1) % panelLinks.length;
+  }
+
+  if (event.key === "ArrowLeft") {
+    nextIndex = (currentIndex - 1 + panelLinks.length) % panelLinks.length;
+  }
+
+  if (event.key === "Home") {
+    nextIndex = 0;
+  }
+
+  if (event.key === "End") {
+    nextIndex = panelLinks.length - 1;
+  }
+
+  event.preventDefault();
+  const nextLink = panelLinks[nextIndex];
+  nextLink.focus();
+
+  const nextPanelId = nextLink.getAttribute("href").slice(1);
+  if (window.location.hash === `#${nextPanelId}`) {
+    activatePanel(nextPanelId);
+    return;
+  }
+
+  window.location.hash = nextPanelId;
+});
